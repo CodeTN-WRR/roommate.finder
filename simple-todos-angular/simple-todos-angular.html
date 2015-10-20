@@ -1,14 +1,8 @@
 <head>
-  <title>simple-todos-angular</title>
+  <title>CodeTN</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+<body data-ng-app="Roomate_Finder" data-ng-controller="User_View">
+  <h1>Meteor Test</h1>
+		<p ng-repeat="item in names" ng-bind="item.fname"></p>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>

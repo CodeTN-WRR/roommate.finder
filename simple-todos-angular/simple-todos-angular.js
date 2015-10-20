@@ -1,23 +1,15 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
+angular.module("Roomate_Finder", ["angular-meteor"]);
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
+angular.module('Roomate_Finder').controller("User_View", ['$scope',
+    function ($scope) {
+      $scope.names = [
+          { fname: 'Ayden' },
+          { fname: 'Ethan' },
+          { fname: 'Jacob' }
+      ];
+ 
+  }]);
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
 }
