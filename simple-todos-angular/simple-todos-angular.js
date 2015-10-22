@@ -1,6 +1,4 @@
-if (Meteor.isClient) {
-
-angular.module("Roomate_Finder", ["angular-meteor"]);
+angular.module("Roomate_Finder", []);
 
 angular.module('Roomate_Finder').controller("User_View", ['$scope',
     function ($scope) {
@@ -11,5 +9,3 @@ angular.module('Roomate_Finder').controller("User_View", ['$scope',
       ];
  
   }]);
-
-}
