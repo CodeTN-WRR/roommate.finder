@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 
-<body data-ng-app="Roomate_Finder" data-ng-controller="User_View">
-<h1>Test hi</h1>
-<p ng-repeat="item in names" ng-bind="item.fname"></p>
-
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controllers/UserController.js"></script>
+<body data-ng-app="Roomate_Finder" data-ng-controller="UserController">
+    <h1>Hello! Welcome to roomate.finder!</h1>
+    <h3>Angular App Below</h3>
+    <h3>{{appName}}</h3>
+    <userinfo id="twelve"></userinfo>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/UserController.js"></script>
+    <script src="js/directives/userinfo.js"></script>
 </body>
 </html>
