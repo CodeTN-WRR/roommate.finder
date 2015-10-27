@@ -1,9 +1,14 @@
-angular.module('Roomate_Finder').controller("UserController", ['$scope',
+app.controller("UserController", ['$scope',
     function ($scope) {
-        $scope.names = [
-            { fname: 'Ayden' },
-            { fname: 'Ethan' },
-            { fname: 'Jacob' }
-        ];
-
+	$scope.appName = "roomate.finder";
+	$scope.twelve = [
+		{
+			photo: "../../Images/Tux-ECB.png",
+			name: "Ayden Case",
+			age: 15,
+			college: "University of Tennessee",
+			highschool: "West High School",
+			interests: "Coding, Sleeping, Eating, Reddit, Linux",	
+		}
+	]
     }]);
