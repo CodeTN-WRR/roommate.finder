@@ -1,7 +1,7 @@
 app.controller("UserController", ['$scope',
     function ($scope) {
 	$scope.appName = "roomate.finder";
-	$scope.twelve = [
+	$scope.twelve =
 		{
 			photo: "../../Images/Tux-ECB.png",
 			name: "Ayden Case",
@@ -10,5 +10,4 @@ app.controller("UserController", ['$scope',
 			highschool: "West High School",
 			interests: "Coding, Sleeping, Eating, Reddit, Linux",	
 		}
-	]
     }]);
