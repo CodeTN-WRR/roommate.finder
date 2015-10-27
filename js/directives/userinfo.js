@@ -2,8 +2,8 @@ app.directive("userinfo", function() {
 	return {
 		restrict: "E",
 		scope: {
-			id: "="
+			idnum: "="
 		},
-		templateUrl: "UserInfo.html"
-	       };
+		templateUrl: "js/views/userinfo.html"
+	};
 });
