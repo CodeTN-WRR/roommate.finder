@@ -4,6 +4,6 @@ app.directive("userinfo", function() {
 		scope: {
 			id: "="
 		},
-		templateUrl: "UserInfo.html"
+		templateUrl: "js/directives/userinfo.html"
 	       };
 });
