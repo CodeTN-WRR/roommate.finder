@@ -1,7 +1,34 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
+.welcome-heading {
   padding: 40px 15px;
   text-align: center;
+}
+
+.profile-summary {
+	
+}
+
+.profile-summary h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.profile-summary ul {
+	list-style: none;
+	padding: 10px 0 10px 8px;
+}
+
+.profile-photo {
+	
+}
+
+.profile-description {
+
+}
+
+.profile-description ul {
+	list-style: none;
+	padding: 0;
 }
