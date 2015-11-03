@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Login/Signup Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -70,21 +70,54 @@
       
     <div class="row">
       
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <a href="#" class="btn btn-primary btn-lg btn-block">Search For Roommates</a>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <a href="#" class="btn btn-primary btn-lg btn-block">View Your Profile</a>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <a href="#" class="btn btn-primary btn-lg btn-block">View Your Settings</a>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <a href="#" class="btn btn-primary btn-lg btn-block">View Your Contact List</a>
-    </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputFirstName2">First Name</label>
+            <input type="text" class="form-control" id="exampleInputFirstName2" placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputLastName2">Last Name</label>
+            <input type="text" class="form-control" id="exampleInputLastName2" placeholder="Doe">
+          </div>
+          <div class="form-group">
+           <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option data-hidden="true">Gender</option>
+                <!-- fix this! make the gender a title, not an option -->
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option data-hidden="true">Grade</option>
+                <!-- fix this! make the grade a title, not an option -->
+              <option>11th</option>
+              <option>12th</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCurrentHighSchool1">Current High School</label>
+            <input type="text" class="form-control" id="exampleInputCurrentHighSchool1" placeholder="Current High School">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFutureCollege1">Future College</label>
+            <input type="text" class="form-control" id="exampleInputFutureCollege1" placeholder="Future College">
+          </div>
+        </form>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+          <a href="#" class="btn btn-primary btn-lg btn-block">Next</a>
+        </div>
+
     </div>
 
       
@@ -100,3 +133,6 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+
+
+<!-- Do These! Make the tiny add college button, center everything, grade/gender select titles, color scheme (#DCDCDC for background?) -->
