@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Step 1: Require the Slim Framework
  *
@@ -11,6 +12,16 @@ require 'Slim/Slim.php';
 
 \Slim\Slim::registerAutoloader();
 
+//load WRR namespace
+$dir_iterator = new RecursiveDirectoryIterator('./wrr');
+$iterator = new RecursiveIteratorIterator($dir_iterator, RecursiveIteratorIterator::SELF_FIRST);
+$availableCommands = [];
+foreach ($iterator as $fileInfo) {
+    if ($iterator->isDot() || $iterator->isDir()) continue;
+    require $fileInfo->getPath().DIRECTORY_SEPARATOR.$fileInfo->getFilename();
+}
+
+
 /**
  * Step 2: Instantiate a Slim application
  *
@@ -21,6 +32,9 @@ require 'Slim/Slim.php';
  */
 $app = new \Slim\Slim();
 
+require '.env';
+$connection = new \Wrr\Database\Connection($user, $pass, $host, $dbname);
+unset($user, $pass, $host, $dbname);
 /**
  * Step 3: Define the Slim application routes
  *
@@ -34,8 +48,10 @@ $app = new \Slim\Slim();
 $app->get(
     '/',
     function () {
-        $template = file_get_contents("mytemplate.phtml");
-        echo $template;
+        global $connection;
+        $roommate = new \Wrr\Roommate($connection);
+        $roommate->loadById(1);
+        var_dump($roommate);
     }
 );
 
@@ -46,28 +62,6 @@ $app->post(
         echo 'This is a POST route';
     }
 );
-
-// PUT route
-$app->put(
-    '/put',
-    function () {
-        echo 'This is a PUT route';
-    }
-);
-
-// PATCH route
-$app->patch('/patch', function () {
-    echo 'This is a PATCH route';
-});
-
-// DELETE route
-$app->delete(
-    '/delete',
-    function () {
-        echo 'This is a DELETE route';
-    }
-);
-
 /**
  * Step 4: Run the Slim application
  *
