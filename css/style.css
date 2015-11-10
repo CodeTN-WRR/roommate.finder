@@ -36,3 +36,20 @@ body {
 .custom-btn {
 	margin: 0 0 10px 0;
 }
+
+.results1 {
+
+}
+
+.results1 h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.results1 h4 {
+	font-size: 14px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	margin-top: 2px;
+}
