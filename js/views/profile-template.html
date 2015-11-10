@@ -1,10 +1,19 @@
 <div class="container">
 
       <div class="welcome-heading">
-        <h1>Hello! Welcome to roomate.finder!</h1>
+        <h1>Hello! Welcome to Go Colmate!</h1>
         <h3>Angular App Below</h3>
-        <h3></h3>
+        <h3>{{appName}}</h3>
       </div>
+    <div ng-view></div>
+    <userinfo idnum="twelve"></userinfo>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/UserController.js"></script>
+    <script src="js/directives/userinfo.js"></script>
+      
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 profile-photo">
         <img src="Images/profile-pic.jpg" alt="profile photo" title="Profile Photo">
@@ -42,7 +51,8 @@
               <li>consectetur adipiscing elit. Fusce sem.</li>
             </ul>
         </div>
-
+      <!--</div>-->
+      <!--<div class="row"><-->
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <h3>Rooming Likes/Dislikes</h3>
             <ul>
@@ -54,7 +64,7 @@
           </div>
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <h3>Disabilities and/or Medical Conditions</h3>
+            <h3>Disabilities/Medical Conditions</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       <!--</div>-->
