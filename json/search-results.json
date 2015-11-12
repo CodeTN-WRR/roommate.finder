@@ -1,5 +1,25 @@
-{ "friends":
+{ "search_results":
 [
+	{ 
+    "name" : "Jane Doe",
+    "age" : "18",
+    "highschool" : "West",
+    "college" : "University of Tennessee",
+    "interests" : "Programming",
+    "gender" : "Female",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "12"
+	},
+ 	{ 
+    "name" : "John Doe",
+    "age" : "18",
+    "highschool" : "Bearden",
+    "college" : "University of Tennessee",
+    "interests" : "Programming",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "11"
+	},
 	{ 
     "name" : "Robert Smith",
     "age" : "18",
