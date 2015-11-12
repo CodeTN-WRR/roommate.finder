@@ -1,0 +1,10 @@
+{ 
+    "name" : "Jane Doe",
+    "age" : "18",
+    "highschool" : "West",
+    "college" : "University of Tennessee",
+    "interests" : "Programming",
+    "gender" : "Female",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "12"
+ }
