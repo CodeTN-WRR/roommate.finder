@@ -16,10 +16,5 @@ class College
 
     }
 
-    function loadById($id)
-    {
-
-    }
-
 
 }

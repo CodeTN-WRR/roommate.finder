@@ -16,7 +16,9 @@ class EntityAbstract
     const TABLE_NAME = 'UNDEFINED';
 
     protected $connection;
+    protected $id;
     protected $_data;
+    protected $_joinedTables = array();
 
     function __construct(Connection $connection)
     {
@@ -25,12 +27,26 @@ class EntityAbstract
 
     function loadById($id)
     {
-        $sql = "select * from ".$this::TABLE_NAME." where id = :id;";
+        $this->id = $id;
+        $sql = "select * from ".$this::TABLE_NAME;/*
+        if (count($this->_joinedTables)) {
+            foreach ($this->_joinedTables as $table) {
+                $sql .= " join ".$table." ".$table." on ".$table.".id = ".$this::TABLE_NAME.".".$table."_id ";
+            }
+        }*/
+        $sql .= " where ".$this::TABLE_NAME.".id = :id;";
         $statement = $this->connection->prepare($sql);
         $statement->execute(array(':id' => $id));
+        //echo $statement->queryString; die();
         if ($statement->rowCount() != 1) {
             throw new \Exception("Unable to find ".get_class($this)." with id ".intval($id));
         }
-        $this->_data = $statement->fetchAll();
+        $data = $statement->fetchAll();
+        $this->_data = $data[0];
+    }
+
+    function join($tableName)
+    {
+        $this->_joinedTables[] = $tableName;
     }
 }

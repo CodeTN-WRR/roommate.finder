@@ -9,15 +9,7 @@
 namespace Wrr;
 
 
-class Preference
+class Preference extends EntityAbstract
 {
-    function __construct()
-    {
-
-    }
-
-    function loadById($id)
-    {
-
-    }
+    const TABLE_NAME = 'preference';
 }
