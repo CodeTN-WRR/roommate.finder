@@ -1,3 +1,4 @@
+{ "friends":
 [
 	{ 
     "name" : "Jane Doe",
@@ -8,7 +9,7 @@
     "gender" : "Female",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "12"
-	 },
+	},
  	{ 
     "name" : "John Doe",
     "age" : "18",
@@ -18,8 +19,8 @@
     "gender" : "Male",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "11"
-	 },
-	 	{ 
+	},
+	{ 
     "name" : "Robert Smith",
     "age" : "18",
     "highschool" : "Gibbs",
@@ -28,8 +29,8 @@
     "gender" : "Male",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "12"
-	 },
-	  	{ 
+	},
+	{ 
     "name" : "Ronald Jenkins",
     "age" : "18",
     "highschool" : "Halls",
@@ -38,8 +39,8 @@
     "gender" : "Male",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "11"
-	 },
-	 { 
+	},
+	{ 
     "name" : "Mr Jones",
     "age" : "18",
     "highschool" : "West",
@@ -48,8 +49,8 @@
     "gender" : "Male",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "12"
-	 },
-	  { 
+	},
+	{ 
     "name" : "Jane Caldera",
     "age" : "18",
     "highschool" : "West",
@@ -58,8 +59,8 @@
     "gender" : "Female",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "11"
-	 },
-	  { 
+	},
+	{ 
     "name" : "Kayla Piff",
     "age" : "18",
     "highschool" : "Halls",
@@ -68,8 +69,8 @@
     "gender" : "Female",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "11"
-	 },
-	  { 
+	},
+	{ 
     "name" : "Sean Cannan",
     "age" : "18",
     "highschool" : "Gibbs",
@@ -78,5 +79,6 @@
     "gender" : "Male",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "12"
-	 },
+	}
 ]
+}
