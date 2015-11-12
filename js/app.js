@@ -13,11 +13,11 @@ app.config(function($routeProvider) {
 		})
 		.when("/friends_list", {
 			controller: "UserController",
-			templateUrl: "js/views/profile-template.html"
+			templateUrl: "js/views/searchresults-template.html"
 		})
 		.when("/search_roommate", {
 			controller: "UserController",
-			templateUrl: "js/views/profile-template.html"
+			templateUrl: "js/views/searchresults-template.html"
 		})
 		.otherwise({
 			redirectTo: "/"
