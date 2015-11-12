@@ -33,6 +33,8 @@ foreach ($iterator as $fileInfo) {
 $app = new \Slim\Slim();
 
 require '.env';
+if (empty($user) || empty($pass) || empty($host) || empty($dbname))
+    throw new Exception('Environment file not properly configured.');
 $connection = new \Wrr\Database\Connection($user, $pass, $host, $dbname);
 unset($user, $pass, $host, $dbname);
 /**

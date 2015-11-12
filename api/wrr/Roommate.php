@@ -4,7 +4,7 @@ namespace Wrr;
 class Roommate extends EntityAbstract
 {
 
-    const TABLE_NAME = 'Roommate';
+    const TABLE_NAME = 'roommate';
 
     protected $likes;
     protected $dislikes;
