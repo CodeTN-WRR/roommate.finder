@@ -9,12 +9,13 @@
       </div>
 
       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-8 profile-summary">
-        <h2>Jane Doe</h2>
+        
+        <h2>{{User_data.name}}</h2>
         <ul> 
-          <li></li>
-          <li>Junior</li>
-          <li>West High School, Knoxville, TN</li>
-          <li>University of Tennessee, Middle Tennessee State University, University of Texas</li>
+          <li>{{User_data.gender}}</li>
+          <li>{{User_data.grade}}</li>
+          <li>{{User_data.highschool}}</li>
+          <li>{{User_data.college}}</li>
         </ul>
     </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -26,16 +27,14 @@
       <div class="row profile-description">
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <h3>Biography</h3>
-            <p>{{Main_data.biography}}</p>
+            <p>{{User_data.biography}}</p>
             
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <h3>Likes/Dislikes</h3>
             <ul>
-              <li>Lorem ipsum</li>
-              <li>dolor sit amet,</li> 
-              <li>consectetur adipiscing elit. Fusce sem.</li>
+              <li>{{User_data.interests}}</li>
             </ul>
         </div>
       <!--</div>-->

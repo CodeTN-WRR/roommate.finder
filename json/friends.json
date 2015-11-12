@@ -1,4 +1,5 @@
-{ 
+[
+	{ 
     "name" : "Jane Doe",
     "age" : "18",
     "highschool" : "West",
@@ -7,4 +8,75 @@
     "gender" : "Female",
     "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
     "grade" : "12"
- }
+	 },
+ 	{ 
+    "name" : "John Doe",
+    "age" : "18",
+    "highschool" : "Bearden",
+    "college" : "University of Tennessee",
+    "interests" : "Programming",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "11"
+	 },
+	 	{ 
+    "name" : "Robert Smith",
+    "age" : "18",
+    "highschool" : "Gibbs",
+    "college" : "MTSU",
+    "interests" : "Hunting",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "12"
+	 },
+	  	{ 
+    "name" : "Ronald Jenkins",
+    "age" : "18",
+    "highschool" : "Halls",
+    "college" : "Tennessee Tech",
+    "interests" : "Programming",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "11"
+	 },
+	 { 
+    "name" : "Mr Jones",
+    "age" : "18",
+    "highschool" : "West",
+    "college" : "University of Texas",
+    "interests" : "Volleyball",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "12"
+	 },
+	  { 
+    "name" : "Jane Caldera",
+    "age" : "18",
+    "highschool" : "West",
+    "college" : "MTSU",
+    "interests" : "Volleyball",
+    "gender" : "Female",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "11"
+	 },
+	  { 
+    "name" : "Kayla Piff",
+    "age" : "18",
+    "highschool" : "Halls",
+    "college" : "University of Tennessee",
+    "interests" : "Soccer",
+    "gender" : "Female",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "11"
+	 },
+	  { 
+    "name" : "Sean Cannan",
+    "age" : "18",
+    "highschool" : "Gibbs",
+    "college" : "University of Texas",
+    "interests" : "Soccer",
+    "gender" : "Male",
+    "biography" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet faucibus varius.",
+    "grade" : "12"
+	 },
+]
